@@ -9,3 +9,7 @@
 .navigation-menu li {
     margin: 0 20px;
 }
+.navigation-menu a{
+    text-decoration: none;
+    color: white;
+}
