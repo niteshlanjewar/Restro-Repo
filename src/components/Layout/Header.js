@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { AppBar, Box, Typography, Toolbar, IconButton, Drawer, Divider } from '@mui/material';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
-import {Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import '../../styles/HeaderStyle.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -21,10 +21,10 @@ const Header = () => {
              My Restro </Typography>
              <Divider />
             <ul className= "mobile-navigation">
-              <li><Link to={"/"}>Home</Link></li>
-              <li> <Link to={"/menu"}>Menu</Link></li>
-              <li> <Link to={"/about"}>About</Link></li>
-              <li>  <Link to={"/contact"}>Contact</Link></li>
+              <li><NavLink activeClassName="active" to={"/"}>Home</NavLink></li>
+              <li> <NavLink to={"/menu"}>Menu</NavLink></li>
+              <li> <NavLink to={"/about"}>About</NavLink></li>
+              <li>  <NavLink to={"/contact"}>Contact</NavLink></li>
             </ul>
              </Box>
    
@@ -44,10 +44,10 @@ const Header = () => {
              My Restro </Typography>
              <Box sx={{display:{xs:"none", sm:"block"}}}>
              <ul className= "navigation-menu">
-              <li><Link to={"/"}>Home</Link></li>
-              <li> <Link to={"/menu"}>Menu</Link></li>
-              <li> <Link to={"/about"}>About</Link></li>
-              <li>  <Link to={"/contact"}>Contact</Link></li>
+              <li><NavLink activeClassName="active" to={"/"}>Home</NavLink></li>
+              <li> <NavLink to={"/menu"}>Menu</NavLink></li>
+              <li> <NavLink to={"/about"}>About</NavLink></li>
+              <li>  <NavLink to={"/contact"}>Contact</NavLink></li>
              </ul>
              </Box>
           </Toolbar>
